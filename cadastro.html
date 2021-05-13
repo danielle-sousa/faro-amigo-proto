@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faro Amigo | Início </title>
+
+    <!--CSS-->
+        <!--BOOSTRAP-->
+        <link href="src/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!--FONTAWESOME-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <!--FLATICON-->
+        <link href="src/css/font/flaticon.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container ">
+          <a class="navbar-brand" href="index.html">
+            <h5> Faro Amigo</h5>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sobre Nós
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="sobre.html">Sobre o site</a></li>
+                  <li><a class="dropdown-item" href="faq.html">Perguntas Frequentes</a></li>
+                  <li><a class="dropdown-item" href="contato.html">Contato</a></li>    
+                  <li><a class="dropdown-item" href="mapa.html">Mapa do Site</a></li>
+                </ul>
+              </li>
+            </ul>
+                <a class="nav-link" href="cadastro.html"><button class="btn btn-outline-dark"><i class="fas fa-user-plus"></i> Cadastrar</button></a>
+                <a class="nav-link" href="login.html"><button class="btn btn-outline-dark"><i class="fas fa-sign-in-alt"></i> Login</button></a>
+        </div>
+      </nav>
+
+      <!--FORMULARIO-->
+
+      <div class="container mt-4">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Cadastro</li>
+            </ol>
+          </nav>
+
+          <div class="container shadow-sm p-3 mb-5 bg-body rounded px-4">
+          <h3 class="text-center mb-5 mt-3">Cadastre-se</h3>
+
+          <form id="form" action="#">
+
+            <p class="text-danger">* Campos obrigatórios</p>
+
+            <div class="alert alert-success alert-dismissible fade" role="alert" id="successmsg">
+                <strong>Parabéns!</strong> Seu cadastro foi realizado com sucesso. 
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="ong" id="ong" required>
+                    <label class="form-check-label" for="ong">
+                      Sou ONG/Protetor
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="adotante" id="adotante">
+                    <label class="form-check-label" for="adotante">
+                      Sou adotante
+                    </label>
+                  </div>
+              </div>
+
+            <div class="row">
+                
+                <div class="col">
+            <div class="form-floating mb-3">
+                <input type="name" class="form-control border-0 border-bottom" id="name" placeholder="Nome completo" required>
+                <label for="nome">*Nome completo</label>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control border-0 border-bottom" id="cpf" placeholder="CPF" onkeypress="$(this).mask('000.000.000-00');" required>
+                <label for="cpf">*CPF</label>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-3">
+              <div class="form-floating mb-3">
+                <input type="date" class="form-control border-0 border-bottom" id="datanasc" placeholder="dd/mm/yyyy" required>
+                <label for="datanasc">*Data de nascimento</label>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control border-0 border-bottom" id="email" placeholder="nome@exemplo.com" required>
+                <label for="email">*Email</label>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control border-0 border-bottom" id="tel" placeholder="(xx)xxxxx-xxxx" onkeypress="$(this).mask('(00) 0000-00009')" required>
+                <label for="tel">*Telefone</label>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-7">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control border-0 border-bottom" id="endereco" placeholder="Endereço" required>
+                <label for="endereco">*Endereço</label>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control border-0 border-bottom" id="num" placeholder="Número" required>
+                <label for="num">*Número</label>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control border-0 border-bottom" id="comp" placeholder="Complemento">
+                <label for="comp">Complemento (opcional)</label>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control border-0 border-bottom" id="bairro" placeholder="Bairro" required>
+                <label for="bairro">*Bairro</label>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control border-0 border-bottom" id="cidade" placeholder="Cidade" required>
+                <label for="cidade">*Cidade</label>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control border-0 border-bottom" id="estado" placeholder="Estado" required>
+                    <label for="estado">*Estado</label>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                
+              <div class="col">
+          <div class="form-floating mb-3">
+              <input type="password" class="form-control border-0 border-bottom" id="password" placeholder="Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+              <label for="senha">*Senha</label>
+            </div>
+            <p class="text-muted">A senha deve conter ao menos 1 número, uma letra maíuscla e uma minúscula e no minimo 8 digitos.</p>
+          </div>
+
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control border-0 border-bottom" id="conf-password" placeholder="Confirme a senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+              <label for="conf-password">*Confirme a senha</label>
+            </div>
+          </div>
+
+          </div>
+
+            <p class="text-center"><button type="submit" class="btn btn-success mt-3" href="#successmsg" onclick="getAlert();"><i class="far fa-paper-plane"></i> Enviar</button></p>
+            </form>
+
+        </div>
+    </div>
+
+       <!--FOOTER-->
+
+       <div class="container-fluid bg-light text-dark">
+        <div class="row mt-5 pt-4 pb-4">
+            <div class="col-lg-4">
+                <h5>Faro Amigo</h5>
+                <p>Faro Amigo é uma plataforma que visa aproximar pessoas em busca de um animal de estimação e ONGs/Protetores que possuem animais para adoção.</p>
+                <p class="text-center"><i class="fab fa-facebook-f ms-2 me-2 fs-4"></i>
+                <i class="fab fa-instagram fs-4"></i></p>
+            </div>
+
+            <div class="col-lg-4 text-center">
+                <h5>Mapa do Site</h5>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre o site</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">Perguntas Frequentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 text-center">
+                <h5>Como Participar?</h5>
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" href="formulario-adocao.html">Quero adotar</a></li>
+                    <li><a class="nav-link" href="login-ong.html">Sou ONG/Protetor</a></li>
+                    <li><a class="nav-link" href="padrinho.html">Quero ser padrinho</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+    <!-- JS -->
+        <!--POPPER-->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <!--JQUERY-->
+        <script src="src/js/jquery.js"></script>
+        <!--BOOTSTRAP-->
+        <script src="src/js/bootstrap.min.js"></script>
+        <!--JQUERY MASK-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+        <script>
+            function getAlert() {
+                var element = document.getElementById("successmsg");
+                element.classList.add("show");
+            };
+        </script>
+</body>
+
+</html>
