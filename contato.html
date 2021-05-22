@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faro Amigo | Login </title>
+    <title>Faro Amigo | Contato </title>
 
     <!--CSS-->
         <!--BOOSTRAP-->
@@ -54,29 +54,54 @@
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Login/li>
+              <li class="breadcrumb-item active" aria-current="page">Contato</li>
             </ol>
           </nav>
 
           <div class="container shadow-sm p-3 mb-5 bg-body rounded px-4">
-          <h3 class="text-center mb-5 mt-3">Login</h3>
-        
-          <form action="index.html">
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control border-0 border-bottom" id="email" placeholder="nome@exemplo.com" required>
-                <label for="email">Email</label>
-              </div>
+          <h3 class="text-center mb-1 mt-3">Contato</h3>
 
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control border-0 border-bottom" id="password" placeholder="Senha" required>
-                <label for="password">Senha</label>
-              </div>
+            Envie sua mensagem com dúvidas, críticas ou sugestões e entraremos em contato o mais rápido possível.
 
-              <p class="text-center"><button type="submit" class="btn btn-success mt-3"><i class="fas fa-sign-in-alt"></i> Entrar</button></p>
-            </form>
+            <form id="form-contact" action="#">
 
-
-          </form>
+                <p class="text-danger mt-2">* Campos obrigatórios</p>
+    
+                <div class="row">
+                    
+                    <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="name" class="form-control border-0 border-bottom" id="name" placeholder="Nome completo" required>
+                    <label for="nome">*Nome completo</label>
+                  </div>
+                </div>
+    
+                </div>
+    
+                <div class="row">
+    
+                <div class="col-lg-5">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control border-0 border-bottom" id="email" placeholder="nome@exemplo.com" required>
+                    <label for="email">*Email</label>
+                  </div>
+                </div>
+    
+                <div class="col">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control border-0 border-bottom" id="tel" placeholder="(xx)xxxxx-xxxx" onkeypress="$(this).mask('(00) 0000-00009')" required>
+                    <label for="tel">*Telefone</label>
+                  </div>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">*Sua mensagem</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                  </div>
+               
+    
+                <p class="text-center"><button type="submit" class="btn btn-success mt-3" onclick="contactRedirect()"><i class="far fa-paper-plane"></i> Enviar</button></p>
+                </form>
 
         </div>
     </div>
@@ -121,6 +146,8 @@
         <script src="src/js/bootstrap.min.js"></script>
         <!--JQUERY MASK-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+         <!--CUSTOM-->
+         <script src="src/js/scripts.js"></script>
 
 </body>
 

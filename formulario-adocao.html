@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faro Amigo | Início </title>
+    <title>Faro Amigo | Formulário de Intenção </title>
 
     <!--CSS-->
         <!--BOOSTRAP-->
@@ -40,12 +40,10 @@
                   <li><a class="dropdown-item" href="sobre.html">Sobre o site</a></li>
                   <li><a class="dropdown-item" href="faq.html">Perguntas Frequentes</a></li>
                   <li><a class="dropdown-item" href="contato.html">Contato</a></li>    
-                  <li><a class="dropdown-item" href="mapa.html">Mapa do Site</a></li>
                 </ul>
               </li>
             </ul>
-                <a class="nav-link" href="cadastro.html"><button class="btn btn-outline-dark"><i class="fas fa-user-plus"></i> Cadastrar</button></a>
-                <a class="nav-link" href="login.html"><button class="btn btn-outline-dark"><i class="fas fa-sign-in-alt"></i> Login</button></a>
+            <span class="nav-link text-dark fs-4"><i class="far fa-user-circle"></i></span>
         </div>
       </nav>
 
@@ -66,24 +64,21 @@
             Ficamos muito felizes por você ter dado o primeiro passo para adotar um pet. Aqui você irá responder algumas perguntas iniciais para que a ONG/protetor parceiro possa te conhecer melhor e dar agilidade ao processo de adoção. Precisaremos de alguns dados pessoais para que possam entrar em contato com você, além de saber um pouco sobre a sua casa, sua família, estrutura, entre outras informações.</blockquote>
 
 
-            <form id="form" action="#">
+            <form id="form-adopt" action="#">
 
-              <div class="alert alert-success alert-dismissible fade" role="alert" id="successmsg">
-                <strong>Parabéns!</strong> Seu formulário foi enviado com sucesso. Aguarde o contato da ONG/Protetor em até 48hs.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-
+              <p class="text-danger">* Campos obrigatórios</p>
+  
                 <h6>Possui crianças em casa?</h6>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="crianca-sim" id="crianca-sim">
+                    <input class="form-check-input" type="checkbox" value="" id="crianca-sim">
                     <label class="form-check-label" for="crianca-sim">
                       Sim
                     </label>
                   </div>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="crianca-nao" id="crianca-nao">
+                    <input class="form-check-input" type="checkbox" value="" id="crianca-nao">
                     <label class="form-check-label" for="crianca-nao">
                       Não
                     </label>
@@ -92,14 +87,14 @@
                   <h6 class="mt-2">A família toda está ciente e de acordo com a adoção?</h6>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="familia-sim" id="familia-sim">
+                    <input class="form-check-input" type="checkbox" value="" id="familia-sim">
                     <label class="form-check-label" for="familia-sim">
                       Sim
                     </label>
                   </div>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="familia-nao" id="familia-nao">
+                    <input class="form-check-input" type="checkbox" value="" id="familia-nao">
                     <label class="form-check-label" for="familia-nao">
                       Não
                     </label>
@@ -108,14 +103,14 @@
                   <h6 class="mt-2">O pet é para você ou para outra pessoa?</h6>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="para-mim" id="para-mim">
+                    <input class="form-check-input" type="checkbox" value="" id="para-mim">
                     <label class="form-check-label" for="para-mim">
                       Pra mim mesmo(a)
                     </label>
                   </div>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="outra-pessoa" id="outra-pessoa">
+                    <input class="form-check-input" type="checkbox" value="" id="outra-pessoa">
                     <label class="form-check-label" for="outra-pessoa">
                       Outra pessoa
                     </label>
@@ -124,14 +119,14 @@
                   <h6 class="mt-2">A sua casa é própria ou alugada?</h6>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="propria" id="propria">
+                    <input class="form-check-input" type="checkbox" value="" id="propria">
                     <label class="form-check-label" for="propria">
                       Própria
                     </label>
                   </div>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="alugada" id="alugada">
+                    <input class="form-check-input" type="checkbox" value="" id="alugada">
                     <label class="form-check-label" for="alugada">
                       Alugada
                     </label>
@@ -140,21 +135,21 @@
                   <h6 class="mt-2">Caso seja alugada, o proprietário permite animais?</h6>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="proprieta-sim" id="proprieta-sim">
+                    <input class="form-check-input" type="checkbox" value="" id="proprieta-sim">
                     <label class="form-check-label" for="proprieta-sim">
                       Sim
                     </label>
                   </div>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="proprieta-nao" id="proprieta-nao">
+                    <input class="form-check-input" type="checkbox" value="" id="proprieta-nao">
                     <label class="form-check-label" for="proprieta-nao">
                       Não
                     </label>
                   </div>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="proprieta-naosei" id="proprieta-naosei">
+                    <input class="form-check-input" type="checkbox" value="" id="proprieta-naosei">
                     <label class="form-check-label" for="proprieta-naosei">
                       Não sei
                     </label>
@@ -178,14 +173,14 @@
                   <h6 class="mt-2">Você já possui um pet?</h6>
 
                   <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="pet-sim" id="pet-sim">
+                      <input class="form-check-input" type="checkbox" value="" id="pet-sim">
                       <label class="form-check-label" for="pet-sim">
                         Sim
                       </label>
                     </div>
   
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="pet-nao" id="pet-nao">
+                      <input class="form-check-input" type="checkbox" value="" id="pet-nao">
                       <label class="form-check-label" for="pet-nao">
                         Não
                       </label>
@@ -194,28 +189,29 @@
                     <h6 class="mt-2">Você fica muito tempo fora de casa?</h6>
 
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="fora-sim" id="fora-sim">
+                        <input class="form-check-input" type="checkbox" value="" id="fora-sim">
                         <label class="form-check-label" for="fora-sim">
                           Sim
                         </label>
                       </div>
     
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="fora-nao" id="fora-nao">
+                        <input class="form-check-input" type="checkbox" value="" id="fora-nao">
                         <label class="form-check-label" for="fora-nao">
                           Não
                         </label>
                       </div>
 
                 <div class="form-check mt-3">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="" id="ciente18" required>
+                    <label class="form-check-label" for="ciente18">
                         Declaro que sou maior de 18 anos, li e estou ciente das informações passadas e de acordo em compartilhar meus dados para fins de contato por uma ONG/protetor parceiro do Faro Amigo. Entendo que o formulário capta o interesse em ser contactado pela ONG/protetor parceiro para entrevista e não garante reserva do pet caso seja identificado como disponível nas ONGs/Protetores.
                     </label>
                   </div>
-
-                  <p class="text-center"><button type="submit" class="btn btn-success mt-3" href="#successmsg" onclick="getAlert();"><i class="far fa-paper-plane"></i> Enviar</button></p>
-            </form>
+  
+  
+              <p class="text-center"><button type="submit" class="btn btn-success mt-3" onclick="homeRedirect()"><i class="far fa-paper-plane"></i> Enviar</button></p>
+              </form>
           
       </div>
     </div>
@@ -260,13 +256,8 @@
         <script src="src/js/bootstrap.min.js"></script>
         <!--JQUERY MASK-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-
-        <script>
-            function getAlert() {
-                var element = document.getElementById("successmsg");
-                element.classList.add("show");
-            };
-        </script>
+        <!--CUSTOM-->
+        <script src="src/js/scripts.js"></script>
 </body>
 
 </html>
