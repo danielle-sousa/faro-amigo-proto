@@ -5,10 +5,10 @@ function searchPets() {
       
     for (i = 0; i < x.length; i++) { 
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].classList.add("fade"); 
+            x[i].style.display="none";
         }
         else {
-            x[i].classList.add("show");                 
+            x[i].style.display="inline";                 
         }
     }
 }
